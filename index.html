@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Carousel</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9808de19ba.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="carousel">
+        <button class="carousel__button carousel__btn--left is-hidden">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <div class="carousel__container">
+            <ul class="carousel__track">
+                <li class="carousel__slide current-slide"><img class="carousel__image" src="https://images.unsplash.com/photo-1574979487785-dec6712408f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2551&q=80" alt=""></li>
+                <li class="carousel__slide"><img class="carousel__image" src="https://images.unsplash.com/photo-1575138312433-d42e9f176f6b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80" alt=""></li>
+                <li class="carousel__slide"><img class="carousel__image" src="https://images.unsplash.com/photo-1575149536487-4c9ac49fc258?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80" alt=""></li>
+            </ul>
+        </div>
+        <button class="carousel__button carousel__btn--right">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="carousel__nav">
+            <button class="carousel__indicator current-slide"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
+        </div>
+    </section>
+    <script src="slideshow.js"></script>
+</body>
+</html>
